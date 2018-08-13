@@ -1,0 +1,16 @@
+flask
+# tensorflow
+pandas
+numpy
+schema
+statsmodels
+scipy
+requests
+click
+python-dotenv
+neo4j-driver
+requests-cache
+peewee
+psycopg2-binary
+celery
+redis
