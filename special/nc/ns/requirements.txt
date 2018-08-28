@@ -14,3 +14,4 @@ peewee
 psycopg2-binary
 celery
 redis
+records
