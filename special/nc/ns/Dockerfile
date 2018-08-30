@@ -8,4 +8,4 @@ RUN apk add --virtual .build-deps \
     apk --purge del .build-deps && rm -rf /tmp/*
 
 ADD fix.sh /fix.sh
-RUN fix.sh
+RUN /fix.sh
