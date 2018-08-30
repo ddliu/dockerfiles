@@ -6,3 +6,6 @@ RUN apk add --virtual .build-deps \
     pip install --no-cache-dir numpy && \
     pip install --no-cache-dir -r /requirements.txt && \
     apk --purge del .build-deps && rm -rf /tmp/*
+
+ADD fix.sh /fix.sh
+RUN fix.sh
