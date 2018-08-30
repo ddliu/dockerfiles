@@ -1,11 +1,3 @@
-FROM python:alpine3.8
+FROM ddliu/nc-ns
 ADD requirements.txt /requirements.txt
-RUN apk add --virtual .build-deps \
-    postgresql-libs postgresql-dev gcc g++ gfortran binutils musl-dev python3-dev openblas-dev && \
-    apk add --no-cache libstdc++ openblas && \
-    pip install --no-cache-dir numpy && \
-    pip install --no-cache-dir -r /requirements.txt && \
-    apk --purge del .build-deps && rm -rf /tmp/*
-
-ADD fix.sh /fix.sh
-RUN /fix.sh
+RUN pip install --no-cache-dir -r /requirements.txt
