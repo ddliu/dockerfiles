@@ -14,5 +14,5 @@ fi
 # Fix Celery cython bug
 # https://github.com/celery/celery/issues/4342
 TARGET=/usr/local/lib/python3.7/site-packages/celery/utils
-
+cd $TARGET
 sed -i 's/fun\.__module__/fun.__globals__["__name__"]/g' functional.py
