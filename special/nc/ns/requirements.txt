@@ -15,4 +15,5 @@ psycopg2-binary
 celery
 redis
 records
-supervisor
+# supervisor 4.0.0dev for python3
+https://github.com/Supervisor/supervisor/archive/837c159ae51f3bf12c1d30a8cb44f3450611983c.zip
