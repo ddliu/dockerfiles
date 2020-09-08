@@ -1,4 +1,4 @@
-FROM python:3.7-slim
+FROM python:3.7.9-slim
 ADD requirements.txt /requirements.txt
 RUN apt-get update \
     && apt-get install -y --no-install-recommends gcc g++ \
